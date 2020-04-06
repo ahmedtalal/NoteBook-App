@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.RateusActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/rateToolbar_id"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:background="@drawable/rounded_toolbar"
+            app:title="Rating "
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How much do you love us ?"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/color5"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="We give you 6 star for trying to learn. How are we doing helping you?"
+                    android:textSize="13sp"
+                    android:gravity="left"
+                    android:fontFamily="monospace"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColorHint="@color/color5"
+                    />
+
+                <RatingBar
+                    android:id="@+id/rate_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="6"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:progressTint="@color/color3"
+                    android:layout_marginBottom="20dp"
+                    android:progressBackgroundTint="@color/color2"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_textsplash"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="8dp"
+                    >
+
+                    <Button
+                        android:id="@+id/rateBtn_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/round_textsplash"
+                        android:text="Submit"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:fontFamily="monospace"
+                        android:textStyle="bold"
+                        android:elevation="8dp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NoteBook</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="artical2">
+        "I am android developer, i am trying to introduce a different and completely new educational ideas in the career of mobile application development , aims to support developers to achieve the highest degrees of advantage in the career, you can follow and ask me through this links in below.
+        "
+    </string>
+
+    <string name="articale3">"we care about your personal data, so we have prepared this privacy policy to explain how we collect, use and share it.this privacy policy details the personal data revceives about you, how we process it and your rights and obligations in relation to your personal data"
+    </string>
+    <string name="articale4">"this privacy policy explain how we collect, use and share your personal data, through the registration process, you will provide us with your name and email,As for your notes, do not worry, they are kept in a safe place and no one can access this data."
+    </string>
+    <string name="articale5">"when you use the app you can share this app with you friends and this process does not mean that you share the app with data so we care about sharing the app without the data."
+    </string>
+
+</resources>

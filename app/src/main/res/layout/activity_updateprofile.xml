@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.UpdateprofileActivity"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/updateToolbar_id"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/rounded_aboutus"
+        app:title="My Profile"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/profilePhoto"
+                    android:src="@drawable/ic_person"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="2dp"
+                    />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_change1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@id/profilePhoto"
+                    android:layout_alignEnd="@id/profilePhoto"
+                    android:layout_alignRight="@id/profilePhoto"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/camer_ID"
+                    />
+
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/profileName_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:textColorHint="#C5C5C5"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:layout_margin="12dp"
+                />
+
+            <EditText
+                android:id="@+id/profileEmail_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:textColorHint="#C5C5C5"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:fontFamily="monospace"
+                android:inputType="textPersonName"
+                android:layout_margin="12dp"
+                />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/profileripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/rippleStyle"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/editBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/round_textsplash"
+                        android:src="@drawable/ic_check_black_24dp"
+                        />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

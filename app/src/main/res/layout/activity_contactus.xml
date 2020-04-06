@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.ContactusActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/contactToolbar_id"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:background="@drawable/rounded_toolbar"
+            app:title="Contact us"
+            />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We are always happy to hear from you"
+                    android:textSize="17sp"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:textColor="@color/color5"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="We will send you the response to the email you provide below."
+                    android:textSize="13sp"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="left"
+                    android:textColorHint="@color/color1"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_contact"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="8dp"
+                    android:hint="Enter your Email"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/emailField_ID"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#C1C1C1"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_contact"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="8dp"
+                    android:hint="Enter your Subject"
+                    android:padding="10dp"
+                    android:id="@+id/subjectField_ID"
+                    android:inputType="text"
+                    android:textColorHint="#C5C5C5"
+                />
+
+
+                <EditText
+                    android:id="@+id/messageField"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/rounded_contact"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="vertical"
+                    android:elevation="8dp"
+                    android:hint="Type your message here"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:textColorHint="#C5C5C5"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_textsplash"
+                    android:layout_margin="20dp"
+                    android:elevation="8dp"
+                    >
+
+                    <Button
+                        android:id="@+id/sendBtn_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_textsplash"
+                        android:text="Send Message"
+                        android:textSize="18sp"
+                        android:textColor="#FFF"
+                        android:fontFamily="monospace"
+                        android:textStyle="bold"
+                        android:elevation="12dp"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

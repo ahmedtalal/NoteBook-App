@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="NOTES" >
+        <menu>
+            <item
+                android:title="All Notes"
+                android:icon="@drawable/ic_notepad"
+                android:id="@+id/allNotes_ID"
+                />
+            <item
+                android:title="My Favorites"
+                android:icon="@drawable/ic_star"
+                android:id="@+id/favorites_id"
+                />
+        </menu>
+    </item>
+    <item android:title="TAGS">
+        <menu>
+            <item
+                android:title="Travel"
+                android:icon="@drawable/ic_tag"
+                android:id="@+id/travel_id"
+                />
+            <item
+                android:title="Personal"
+                android:icon="@drawable/ic_tag1"
+                android:id="@+id/personal_id"
+                />
+            <item
+                android:title="Life"
+                android:icon="@drawable/ic_tag2"
+                android:id="@+id/life_id"
+                />
+            <item
+                android:title="Work"
+                android:icon="@drawable/ic_tag3"
+                android:id="@+id/work_id"
+                />
+            <item
+                android:title="Untagged"
+                android:icon="@drawable/ic_tag_4"
+                android:id="@+id/untagged_id"
+                />
+        </menu>
+    </item>
+    <item android:title="OTHERS">
+        <menu>
+            <item
+                android:title="Settings"
+                android:icon="@drawable/ic_settings"
+                android:id="@+id/setting_id"
+                />
+            <item
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/logout_id"
+                />
+        </menu>
+
+    </item>
+</menu>
